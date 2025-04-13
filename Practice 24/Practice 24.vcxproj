@@ -131,6 +131,7 @@
     <ClCompile Include="Practice 24.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array.hpp" />
     <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

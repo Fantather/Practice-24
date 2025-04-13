@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <algorithm>
-using namespace std;
 
 class my_string {
 	size_t size;		// size of string

@@ -72,7 +72,7 @@ void my_string::set(const char* user_str)
 
 	// if the new capacity is more than twice the size, halve it until it is less than twice the size
 	while (new_capacity > (size + 1) * 2) {
-		new_capacity = max(size + 1, new_capacity / 2);
+		new_capacity = std::max(size + 1, new_capacity / 2);
 	}
 
 	// set new string
@@ -86,5 +86,5 @@ void my_string::set(const char* user_str)
 
 void my_string::get() const
 {
-	cout << str;
+	std::cout << str;
 }
