@@ -1,9 +1,9 @@
 #include "Header.h"
 
-my_string::my_string() : size(0), capacity(80), str(new char[capacity])
+my_string::my_string() : size(0), capacity(81), str(new char[capacity])
 {
 	//size = 0;
-	//capacity = 80; // default size
+	//capacity = 81; // default size
 	//str = new char[capacity];
 
 	str[0] = '\0';
