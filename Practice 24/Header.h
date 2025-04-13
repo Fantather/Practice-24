@@ -4,9 +4,9 @@
 using namespace std;
 
 class my_string {
-	char* str;			// pointer to string
 	size_t size;		// size of string
 	size_t capacity;	// capacity of string
+	char* str;			// pointer to string
 
 public:
 	// default constructor

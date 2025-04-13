@@ -7,9 +7,13 @@ int main()
 	my_string str3("Hello, World!");	// constructor with string
 	my_string str4(str3);				// copy constructor
 	str1.set("Hello");
+	cout << "str1: ";
 	str1.get();
+	cout << "\nstr2: ";
 	str2.get();
+	cout << "\nstr3: ";
 	str3.get();
+	cout << "\nstr4: ";
 	str4.get();
 }
 

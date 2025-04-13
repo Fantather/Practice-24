@@ -1,11 +1,20 @@
 #include "Header.h"
 
-my_string::my_string() : size(0), capacity(81), str(new char[capacity]) {
+my_string::my_string() : size(0), capacity(80), str(new char[capacity])
+{
+	//size = 0;
+	//capacity = 80; // default size
+	//str = new char[capacity];
+
 	str[0] = '\0';
 }
 
 my_string::my_string(size_t user_size) : size(user_size), capacity(size + 1), str(new char[capacity])
 {
+	//size = 0;
+	//capacity = user_size + 1; // set capacity to user size
+	//str = new char[capacity];
+
 	str[0] = '\0';
 }
 
@@ -31,6 +40,10 @@ my_string::my_string(const char* user_str)
 // if str is null, set it to empty string
 my_string::my_string(const my_string& user_str) : size(user_str.size), capacity(user_str.capacity), str(new char[user_str.capacity])
 {
+	//size = user_str.size;
+	//capacity = user_str.capacity;
+	//str = new char[capacity];
+
 	strcpy_s(str, capacity, user_str.str ? user_str.str : "");
 }
 
